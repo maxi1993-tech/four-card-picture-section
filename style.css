@@ -1,3 +1,60 @@
+/* Variables */
+:root {
+  --primary-red: hsl(0, 78%, 62%);
+  --primary-cyan: hsl(180, 62%, 55%);
+  --primary-orange: hsl(34, 97%, 64%);
+  --primary-blue: hsl(212, 86%, 64%);
+  --neutral-grey-500: hsl(234, 12%, 34%);
+  --neutral-grey-400: hsl(212, 6%, 44%);
+  --neutral-white: hsl(0, 0%, 100%);
+  --color-footer: hsl(228, 45%, 44%);
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Background */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--neutral-white);
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+/* Header */
+header {
+  width: 19.75rem;
+  color: var(--neutral-grey-500);
+  line-height: 1.4;
+  letter-spacing: 0.25px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+header h1 {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+header h1 span {
+  font-weight: 200;
+}
+header p {
+  font-weight: 400;
+  font-size: 0.9375rem;
+}
+
 /* Footer */
 .attribution {
   font-size: 0.6875rem;
@@ -5,5 +62,5 @@
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--color-footer);
 }/*# sourceMappingURL=style.css.map */
