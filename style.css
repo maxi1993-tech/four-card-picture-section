@@ -9,6 +9,7 @@
   --neutral-grey-400: hsl(212, 6%, 44%);
   --neutral-white: hsl(0, 0%, 100%);
   --color-footer: hsl(228, 45%, 44%);
+  --cards-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
 }
 
 /* Reset */
@@ -68,16 +69,16 @@ header p {
   width: 19.625rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  border: 1px solid black;
+  gap: 1.95rem;
 }
 .cards article {
   background-color: var(--neutral-white);
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 2rem 2rem 2.9625rem 2rem;
+  padding: 1.75rem 2rem 3rem 2rem;
   border-radius: 8px;
+  box-shadow: var(--cards-shadow);
 }
 .cards article img {
   width: 4rem;
@@ -101,6 +102,18 @@ header p {
   line-height: 1.6;
   font-weight: 400;
   letter-spacing: 0.09px;
+}
+.cards article.card-supervisor {
+  border-top: 4px solid var(--primary-cyan);
+}
+.cards article.card-team-builder {
+  border-top: 4px solid var(--primary-red);
+}
+.cards article.card-karma {
+  border-top: 4px solid var(--primary-orange);
+}
+.cards article.card-calculator {
+  border-top: 4px solid var(--primary-blue);
 }
 
 /* Footer */
