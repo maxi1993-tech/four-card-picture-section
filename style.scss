@@ -21,15 +21,18 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--neutral-white);
+    
 }
 
 main {
+    width: 100%;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 23.4375rem;
     justify-content: center;
-    align-items: center;
-    gap: 60px;
+    justify-items: center;
+    align-content: center;
+    gap: 3.75rem;
 }
 
 /* Header */
@@ -41,11 +44,14 @@ header {
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
 
     h1 {
         font-weight: 600;
         font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.05rem;
 
 
         span {
