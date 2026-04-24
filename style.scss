@@ -1,5 +1,6 @@
 /* Variables */
 :root {
+    --color-bg: hsl(0, 0%, 98%);
     --primary-red: hsl(0, 78%, 62%);
     --primary-cyan: hsl(180, 62%, 55%);
     --primary-orange: hsl(34, 97%, 64%);
@@ -20,8 +21,7 @@
 /* Background */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: var(--neutral-white);
-
+    background-color: var(--color-bg);
 }
 
 /* Content */
@@ -54,7 +54,6 @@ header {
         flex-direction: column;
         gap: 0.05rem;
 
-
         span {
             font-weight: 200;
         }
@@ -73,6 +72,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    border: 1px solid black;
 
     article {
         background-color: var(--neutral-white);
@@ -98,7 +98,6 @@ header {
                 font-size: 1.25rem;
                 line-height: 1.35;
                 font-weight: 600;
-
             }
 
             p {
