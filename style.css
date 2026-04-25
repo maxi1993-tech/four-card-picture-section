@@ -36,6 +36,52 @@ main {
   align-content: center;
   gap: 3.75rem;
 }
+@media (min-width: 1440px) {
+  main {
+    grid-template-columns: repeat(3, 21.875rem);
+    row-gap: 4.625rem;
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
+  main header {
+    grid-column: 1/-1;
+    width: 100%;
+    max-width: 33.75rem;
+  }
+  main header h1 {
+    font-size: 2.25rem;
+  }
+  main .cards {
+    width: 21.875rem;
+    display: grid;
+    grid-template-columns: repeat(3, 21.875rem);
+    gap: 2rem;
+    grid-column: 1/-1;
+    justify-content: center;
+    grid-template-areas: "supervisor team-builder calculator" "supervisor karma calculator";
+  }
+  main .cards article {
+    width: 21.875rem;
+  }
+  main .cards .card-supervisor {
+    grid-area: supervisor;
+    align-self: center;
+    justify-items: center;
+  }
+  main .cards .card-team-builder {
+    grid-area: team-builder;
+    justify-items: center;
+  }
+  main .cards .card-karma {
+    grid-area: karma;
+    justify-content: center;
+  }
+  main .cards .card-calculator {
+    grid-area: calculator;
+    align-self: center;
+    justify-items: end;
+  }
+}
 
 /* Header */
 header {
@@ -121,7 +167,6 @@ header p {
   font-size: 0.6875rem;
   text-align: center;
 }
-
 .attribution a {
   color: var(--color-footer);
 }/*# sourceMappingURL=style.css.map */
